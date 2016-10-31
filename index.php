@@ -27,7 +27,6 @@
 
 require_once( 'config.php' );
 
-// test, must open
 if( !isset( $_REQUEST['appraiser_id']) && $_REQUEST['appraiser_id'] == '' || 
         !isset( $_REQUEST['access_token']) && $_REQUEST['access_token'] == '' ||
         !isset( $_REQUEST['aw_token']) && $_REQUEST['aw_token'] == ''
@@ -38,16 +37,16 @@ if( !isset( $_REQUEST['appraiser_id']) && $_REQUEST['appraiser_id'] == '' ||
     exit();
 }
 
-$appraiser_id = $_REQUEST['appraiser_id'];
-$mn_access_token =$_REQUEST['access_token'];
-$aw_token = $_REQUEST['aw_token'];
+$appraiser_id       = $_REQUEST['appraiser_id'];
+$mn_access_token    = $_REQUEST['access_token'];
+$aw_token           = $_REQUEST['aw_token'];
  
 //post this to Mercury API
     $post_fields = array(
-        'client_id' => MERCURY_CLIENT_ID //BT ID that mercury provided
-        , 'redirect_uri'=>urlencode(REDIRECT_URI)
-        , 'response_type'=>urlencode('token') //static
-        , 'scope'=>urlencode('OrdersAPI AccountLogin') //static
+        'client_id'         => MERCURY_CLIENT_ID //BT ID that mercury provided
+        , 'redirect_uri'    =>urlencode(REDIRECT_URI)
+        , 'response_type'   =>urlencode('token') //static
+        , 'scope'           =>urlencode('OrdersAPI AccountLogin') //static
     );
  
 if( $mn_access_token != '' && $aw_token != '' ){ 
