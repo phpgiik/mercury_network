@@ -43,7 +43,7 @@ $aw_token           = $_REQUEST['aw_token'];
  
 //post this to Mercury API
     $post_fields = array(
-        'client_id'         => MERCURY_CLIENT_ID //BT ID that mercury provided
+        'client_id'         =>MERCURY_CLIENT_ID //BT ID that mercury provided
         , 'redirect_uri'    =>urlencode(REDIRECT_URI)
         , 'response_type'   =>urlencode('token') //static
         , 'scope'           =>urlencode('OrdersAPI AccountLogin') //static
