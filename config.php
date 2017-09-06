@@ -2,24 +2,24 @@
 
 
 if ( !defined( 'MERCURY_CLIENT_ID' ) ) {
-	define( 'MERCURY_CLIENT_ID', '0146B061-8D40-4F1B-8CC3-DCD21A74D037' );
+	define( 'MERCURY_CLIENT_ID', '' );
 }
 
 if ( !defined( 'REDIRECT_URI' ) ) {
-	define( 'REDIRECT_URI', 'http://www.appraisalworld.com/AW/myoffice_home/mercury_network/mercury_oauth_callback.php' );
+	define( 'REDIRECT_URI', '' );
 }
 
 
 if ( !defined( 'MERCURY_LOGIN_API' ) ) {
-	define( 'MERCURY_LOGIN_API', 'https://wbsvcqa.mercuryvmp.com/API/Vendors/AccountLogin' );
+	define( 'MERCURY_LOGIN_API', '' );
 }
 
 if ( !defined( 'MERCURY_SET_STATUS_API' ) ) {
-	define( 'MERCURY_SET_STATUS_API', 'https://wbsvcqa.mercuryvmp.com/API/Vendors/Status' );
+	define( 'MERCURY_SET_STATUS_API', '' );
 }
 
 if ( !defined( 'MERCURY_AUTHORIZE_URL' ) ) {
-	define( 'MERCURY_AUTHORIZE_URL', 'https://vendors.mercuryvmpqa.com/oauth/connect/authorize' );
+	define( 'MERCURY_AUTHORIZE_URL', '' );
 }
 
 $is_a_production_server = true;
